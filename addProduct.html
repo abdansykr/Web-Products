@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>Admin Produk</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/admin.css" />
+ 	</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="admin.html">
+						<img src="img/icons/logo.png">
+					</a>
+				</div> <!-- logo -->
+				<div class="shop-icon">
+					<div class="dropdown">
+						<img src="img/icons/account.png">
+						<div class="dropdown-menu">
+							<ul>
+								<li><a href="index.html">Toko Biru</a></li>								
+							</ul>
+						</div>
+					</div>
+				</div> <!-- shop icons -->
+			</div> <!-- brand -->
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+	<main>
+		
+		<div class="main-content">
+			<div class="sidebar">
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="admin.html">Home</a></li>
+					<li><a class="active" href="addproduct.html">Product</a></li>
+				</ul>				
+			</div>
+			<div class="content">
+				<h3>Produk</h3>
+				<div class="content-data">
+					<div class="content-form">
+						<form>
+							<h4>Tambah Produk</h4>
+							<div class="form-inline">
+								<div class="form-group">
+									<label>Harga Produk</label>
+									<input type="text" name="pname">
+								</div>
+								<div class="form-group">
+									<label>Harga</label>
+									<input type="text" name="price">
+								</div>
+							</div>
+							<div class="form-group">
+								<label>Deskripsi</label>
+								<textarea style="resize:none" name="ldesc" rows="3"></textarea>
+							</div>
+							<div class="form-inline">
+								<div class="form-group">
+									<label>Gambar</label>
+									<input type="file" name="image" multiple>
+								</div>
+							</div>												
+							<div class="form-group">
+								<label></label>
+								<input type="submit" name="addProduct" value="Add Product">
+							</div>
+						</form>
+					</div>
+					<div class="content-detail">
+						<h4>Semua Produk</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Produk</th>
+									<th>Harga</th>
+									<th>Hapus</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Kecap</td>
+									<td>1500</td>
+									<td>-</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>		
+
+	</main> <!-- Main Area -->
+
+	<footer>
+	
+	</footer> <!-- Footer Area -->
+
+</body>
+
+</html>
