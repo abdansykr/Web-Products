@@ -59,63 +59,6 @@
 						<img src="img/icons/logo.png">
 					</a>
 				</div> <!-- logo -->
-				<div class="shop-icon">
-					<div class="dropdown">
-						<img src="img/icons/heart.png">
-						<div class="dropdown-menu wishlist-item">
-							<table border="1">
-								<thead>
-									<tr>
-										<th>Gambar</th>
-										<th>Nama produk</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><img src="img/product/img1.jpg"></td>
-										<td>nama produk</td>
-									</tr>
-									<tr>
-										<td><img src="img/product/img2.jpg"></td>
-										<td>nama produk</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="dropdown">
-						<img src="img/icons/shopping_cart.png">
-						<div class="dropdown-menu cart-item">
-							<table border="1">
-								<thead>
-									<tr>
-										<th>Gambar</th>
-										<th>Nama Produk</th>
-										<th class="center">Harga</th>
-										<th class="center">Qty.</th>
-										<th class="center">Jumlah</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td><img src="img/product/img1.jpg"></td>
-										<td>Nama produk</td>
-										<td class="center">1200</td>
-										<td class="center">2</td>
-										<td class="center">2400</td>
-									</tr>
-									<tr>
-										<td><img src="img/product/img2.jpg"></td>
-										<td>Nama produk</td>
-										<td class="center">1500</td>
-										<td class="center">2</td>
-										<td class="center">3000</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div> <!-- shop icons -->
 			</div> <!-- brand -->
 		</div> <!-- container -->
 	</header> <!-- header -->
@@ -162,21 +105,6 @@
 					<div class="product-description">
 						<p>- </p>
 					</div>
-					<hr>
-					<div class="product-cart">
-						<form id="cart-form">
-							<div class="form-group">
-								<input type="number" class="cart-number" name="cartNumber" value="1" min="1" max="10">
-								<input type="submit" name="addToCart" value="Keranjang">
-							</div>
-						</form>
-						<form id="wishlist-form">
-							<div class="form-group">
-								<input type="checkbox" class="wishlist" name="wishlist"> Masukkan Wishlist
-							</div>
-						</form>
-					</div>
-					<hr>
 					<div class="product-meta">
 						<p><b>Kategori: </b> Sembako</p>
 						<p><b>Bagikan Produk: </b> WhatsApp</p>
@@ -197,45 +125,57 @@
 					<h3>PRODUK TERBAIK REKOMENDASI BUAT ANDA</h3>
 				</div>
 				<div class="product-content">
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/img1.jpg">
-						</a>
-						<div class="product-detail">
-							<h2>Kecap Bango</h2>
-							<a href="#">Keranjang</a>
-							<p>Rp.4500</p>
-						</div>						
+					<div class="product-card">
+					  <a href="product.html" class="product-link">
+					    <div class="product-image">
+					      <img src="img/product/img1.jpg" alt="Kecap Bango">
+					    </div>
+					    <div class="product-details">
+					      <h3 class="product-title">Kecap Bango</h3>
+					      <div class="product-actions">
+					        <p class="product-price">Rp.4500</p>
+					      </div>
+					    </div>
+					  </a>
 					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/img2.jpg">
-						</a>
-						<div class="product-detail">
-							<h2>Garam Dolphin</h2>
-							<a href="#">Keranjang</a>
-							<p>Rp.2000</p>
-						</div>
+					<div class="product-card">
+					  <a href="product.html" class="product-link">
+					    <div class="product-image">
+					      <img src="img/product/img2.jpg" alt="Garam">
+					    </div>
+					    <div class="product-details">
+					      <h3 class="product-title">Garam Dolphin</h3>
+					      <div class="product-actions">
+					        <p class="product-price">Rp.4500</p>
+					      </div>
+					    </div>
+					  </a>
 					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/img3.jpg">
-						</a>
-						<div class="product-detail">
-							<h2>Tepung Segitiga Biru</h2>
-							<a href="#">Keranjang</a>
-							<p>Rp.4000</p>
-						</div>
+					<div class="product-card">
+					  <a href="product.html" class="product-link">
+					    <div class="product-image">
+					      <img src="img/product/img3.jpg" alt="Tepung">
+					    </div>
+					    <div class="product-details">
+					      <h3 class="product-title">Tepung Segitiga Biru</h3>
+					      <div class="product-actions">
+					        <p class="product-price">Rp.4500</p>
+					      </div>
+					    </div>
+					  </a>
 					</div>
-					<div class="product">
-						<a href="product.html">
-							<img src="img/product/img4.jpg">
-						</a>
-						<div class="product-detail">
-							<h2>Minyak Bimoli</h2>
-							<a href="#">Keranjang</a>
-							<p>Rp.3200</p>
-						</div>
+					<div class="product-card">
+					  <a href="product.html" class="product-link">
+					    <div class="product-image">
+					      <img src="img/product/img4.jpg" alt="Minyak">
+					    </div>
+					    <div class="product-details">
+					      <h3 class="product-title">Minyak Bimoli</h3>
+					      <div class="product-actions">
+					        <p class="product-price">Rp.4500</p>
+					      </div>
+					    </div>
+					  </a>
 					</div>
 				</div>
 			</div> 

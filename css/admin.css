@@ -157,7 +157,7 @@ main .dashboard .content-data{
 	grid-column-gap: 15px;
 }
 main .dashboard .content-data .content-detail{
-	width: 100% !important;
+	width: 200% !important;
 	height: 100%;
 	padding-left: 0px !important;
 }
@@ -237,10 +237,25 @@ main table th{
 	text-transform: uppercase;
 }
 main table td, main table th{
-	border: 1px solid #eee;
+	border: 3px solid #eee;
 	text-align: center;
-	padding: 5px 2px;
+	padding: 10px 1px;
 }
+table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      position: relative;
+    }
+    .edit-btn {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      font-size: 12px;
+      padding: 2px 5px;
+    }
 footer{
 	height: 50px;
 	background-color: var(--khaki); 

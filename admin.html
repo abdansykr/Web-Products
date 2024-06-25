@@ -49,62 +49,23 @@
 				<h3>Dashboard</h3>
 				<div class="content-data">
 					<div class="content-detail">
-						<h4>Stok Barang</h4>
+						<h4>Semua Produk</h4>
 						<table>
 							<thead>
 								<tr>
 									<th>Produk</th>
 									<th>Harga</th>
-									<th>Banyak</th>
+									<th>Hapus</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>Kecap</td>
 									<td>1500</td>
-									<td>2</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="content-detail">
-						<h4>Order Terbaru</h4>
-						<table>
-							<thead>
-								<tr>
-									<th>Tanggal</th>
-									<th>ID</th>
-									<th>Pengguna</th>
-									<th>Jumlah</th>								
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>11-05-2020</td>
-									<td>15895452</td>
-									<td>bayu</td>
-									<td>1500</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="content-detail">
-						<h4>Order</h4>
-						<table>
-							<thead>
-								<tr>
-									<th>Tangga</th>
-									<th>ID</th>
-									<th>Pengguna</th>
-									<th>Jumlah</th>								
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>11-05-2020</td>
-									<td>15895452</td>
-									<td>Bayu</td>
-									<td>1500</td>
+									<td> <a href="<?=base_url('admin/barang/tambah?id='.$row['barang_id'].'&status=1')?>"
+										class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+								        <button class="btn btn-danger btn-sm" onClick="hapus(<?=$row['barang_id']?>)">
+								        <i class="fa fa-trash"></i></button></td>
 								</tr>
 							</tbody>
 						</table>
@@ -118,6 +79,7 @@
 	<footer>
 	
 	</footer> 
+	 
 
 </body>
 
