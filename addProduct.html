@@ -49,31 +49,26 @@
 				<h3>Produk</h3>
 				<div class="content-data">
 					<div class="content-form">
-						<form>
+						<form action="simpan_barang.php" method="post" enctype="multipart/form-data">
 							<h4>Tambah Produk</h4>
 							<div class="form-inline">
 								<div class="form-group">
-									<label>Harga Produk</label>
-									<input type="text" name="pname">
+									<label for="nama_barang">Nama Produk</label>
+									<input type="text" name="nama_barang">
 								</div>
 								<div class="form-group">
-									<label>Harga</label>
-									<input type="text" name="price">
-								</div>
+									<label for="harga_barang">Harga</label>
+									<input type="text" name="harga_barang" > </div>
 							</div>
 							<div class="form-group">
-								<label>Deskripsi</label>
-								<textarea style="resize:none" name="ldesc" rows="3"></textarea>
+								<label for="deskripsi_barang">Deskripsi</label>
+								<textarea type="text" name="deskripsi_barang" ></textarea>
 							</div>
-							<div class="form-inline">
-								<div class="form-group">
-									<label>Gambar</label>
-									<input type="file" name="image" multiple>
-								</div>
-							</div>												
 							<div class="form-group">
-								<label></label>
-								<input type="submit" name="addProduct" value="Add Product">
+								<label for="gambar_barang">Gambar</label>
+								<input type="file"  name="gambar_barang"> </div>
+							<div class="form-group">
+								<input type="submit" name="addProduct" value="addProduct">
 							</div>
 						</form>
 					</div>
