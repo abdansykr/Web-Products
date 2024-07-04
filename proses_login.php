@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 
   // Based on access level, redirect to appropriate page (replace with your logic)
   if ($hak_akses == "admin") {
-    header('Location: admin.html'); // Redirect to admin page
+    header('Location: admin.php'); // Redirect to admin page
   } else {
     header('Location: index.html'); // Redirect to user page
   }
