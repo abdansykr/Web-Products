@@ -17,20 +17,10 @@
 		<div class="container">
 			<div class="brand">
 				<div class="logo">
-					<a href="admin.html">
-						<img src="img/icons/logo.png">
+					<a href="admin.php">
+						<img src="img/icons/toko.png">
 					</a>
 				</div> <!-- logo -->
-				<div class="shop-icon">
-					<div class="dropdown">
-						<img src="img/icons/account.png">
-						<div class="dropdown-menu">
-							<ul>
-								<li><a href="index.html">Toko Biru</a></li>								
-							</ul>
-						</div>
-					</div>
-				</div> <!-- shop icons -->
 			</div> <!-- brand -->
 		</div> <!-- container -->
 	</header> <!-- header -->
@@ -41,13 +31,12 @@
 			<div class="sidebar">
 				<h3>Menu</h3>
 				<ul>
-					<li><a href="admin.html">Home</a></li>
+					<li><a href="admin.php">Home</a></li>
 					<li><a class="active" href="addproduct.html">Product</a></li>
 				</ul>				
 			</div>
 			<div class="content">
 				<h3>Produk</h3>
-				<div class="content-data">
 					<div class="content-form">
 						<form action="simpan_barang.php" method="post" enctype="multipart/form-data">
 							<h4>Tambah Produk</h4>
@@ -66,14 +55,12 @@
 							</div>
 							<div class="form-group">
 								<label for="gambar_barang">Gambar</label>
-								<input type="file"  name="gambar_barang"> </div>
+								<input type="file"  name="gambar_barang" onchange="PreviewImage()"> </div>
 							<div class="form-group">
 								<input type="submit" name="addProduct" value="addProduct">
 							</div>
 						</form>
-					</div>
-					
-				</div>
+					</div>			
 			</div>
 		</div>		
 
